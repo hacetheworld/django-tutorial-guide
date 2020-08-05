@@ -4,4 +4,12 @@ from django.http import HttpResponse
 
 
 def Home(request):
-    return HttpResponse("Hello World!! again")
+    return render(request, "accounts/dashboard.html", {})
+
+
+def customer(request):
+    return render(request, "accounts/customer.html", {})
+
+
+def products(request):
+    return render(request, "accounts/products.html", {})
