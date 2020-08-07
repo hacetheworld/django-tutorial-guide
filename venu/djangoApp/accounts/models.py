@@ -57,3 +57,4 @@ class Order(models.Model):
     ))
     date_created = models.DateTimeField(auto_now_add=True, null=True)
     status = models.CharField(max_length=50, choices=STATUS)
+    note = models.CharField(default='Hello World', max_length=100, null=True)
